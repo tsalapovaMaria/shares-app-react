@@ -114,3 +114,13 @@
     right: 0;
     z-index: 0;
 }
+
+.currentCurrency {
+    text-align: center;
+}
+
+.currentCurrency_text {
+    position: relative;
+    top: 5px;
+    font: var(--font-dropdown);
+}

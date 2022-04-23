@@ -1,4 +1,5 @@
 import {Header} from "./components/Header";
+import './base/fonts.css';
 
 function App() {
   return (

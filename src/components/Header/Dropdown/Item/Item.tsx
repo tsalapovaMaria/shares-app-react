@@ -12,7 +12,7 @@ export const Item: React.FC<Props> = (props) => {
 
     return (
         <>
-            <input type="radio" name="list" value={value} id={id} checked={checked} readOnly/>
+            <input type="radio" name="list" value={value} id={id} checked={checked}/>
             <label htmlFor={id}>{title}</label>
         </>
     )

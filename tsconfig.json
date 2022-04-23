@@ -4,7 +4,7 @@
     "esModuleInterop": true,
     "target": "es6",
     "sourceMap": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "moduleResolution": "Node"
   },
   "include": ["**/*.ts", "**/*.tsx"],
