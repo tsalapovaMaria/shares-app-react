@@ -1,5 +1,5 @@
 import React from 'react';
-import Arrow from "../../../icons/arrow.svg";
+import Arrow from "../../../icons/svgr/Arrow.js";
 import styles from './Dropdown.module.css';
 import {Item} from "./Item";
 
@@ -20,7 +20,7 @@ export const Dropdown = () => {
                         <div>USD</div>
                     </div>
                 </div>
-                <img src={Arrow} alt="arrow"/>
+                <Arrow className={styles.arrow} alt="arrow"/>
             </label>
         </div>
     )

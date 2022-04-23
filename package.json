@@ -27,9 +27,14 @@
   "stylelint": {
     "extends": "stylelint-config-recommended",
     "rules": {
-      "at-rule-no-unknown": [true, {
-        "ignoreAtRules": ["import-normalise"]
-      }]
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "import-normalise"
+          ]
+        }
+      ]
     }
   },
   "browserslist": {
@@ -43,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.2.1"
   }
 }
