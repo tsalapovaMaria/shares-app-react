@@ -1,0 +1,18 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es6",
+    "sourceMap": true,
+    "jsx": "react",
+    "moduleResolution": "Node"
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "atDirectives": [
+    {
+      "name": "@import-normalize",
+      "description": "bring in normalize.css styles"
+    }
+  ]
+}
