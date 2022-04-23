@@ -1,6 +1,9 @@
 import React from 'react';
 import Arrow from "../../../icons/arrow.svg";
 import styles from './Dropdown.module.css';
+import {Item} from "./Item";
+
+const currency = ['USD', 'EUR', 'RUB'];
 
 export const Dropdown = () => {
     return (
@@ -10,14 +13,9 @@ export const Dropdown = () => {
                 <input type="radio" name="list" value="not_changed" id="dropdown" readOnly/>
                 <label className={styles.bg} htmlFor="bg"/>
                 <div className={styles.items}>
-                    <input type="radio" name="list" value="first_value" id="usd" checked readOnly/>
-                    <label htmlFor="usd">USD</label>
-                    <input type="radio" name="list" value="second_value" id="eur" readOnly/>
-                    <label htmlFor="eur">EUR</label>
-                    <input type="radio" name="list" value="second_value" id="rub" readOnly/>
-                    <label htmlFor="rub">
-                        <div>RUB</div>
-                    </label>
+                    {currency.map((title, index) =>
+                        <Item title={title} value={`${index}_value`} checked={index === 0}/>
+                    )}
                     <div id="text">
                         <div>USD</div>
                     </div>
