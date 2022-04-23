@@ -9,6 +9,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
+    "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -23,6 +24,19 @@
       "react-app/jest"
     ]
   },
+  "stylelint": {
+    "extends": "stylelint-config-recommended",
+    "rules": {
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "import-normalise"
+          ]
+        }
+      ]
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -34,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@svgr/cli": "^6.2.1"
   }
 }

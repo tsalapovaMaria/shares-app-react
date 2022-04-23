@@ -1,0 +1,126 @@
+.dropdownContainer input {
+    display: none;
+}
+
+.dropdownContainer #text {
+    position: absolute;
+    display: block;
+    align-items: center;
+    top: -5px;
+    width: 110px;
+    height: 40px;
+}
+
+.dropdownContainer #text div {
+    margin-top: 11px;
+    margin-left: 40px;
+    height: 40px;
+}
+
+.dropdownContainer .dropdown {
+    display: inline-block;
+    width: 110px;
+    height: 34px;
+    line-height: 30px;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+
+    fill: #FFFFFF;
+    transform: rotate(90deg);
+    width: 20px;
+
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.dropdownContainer #dropdown:checked ~ .arrow {
+    transform: rotate(270deg);
+    transition: all 0.2s;
+}
+
+.dropdownContainer .dropdown input[name="list"]:checked ~ #text {
+    background: none;
+    color: transparent;
+    z-index: 2;
+}
+
+.dropdownContainer .items {
+    display: block;
+    min-height: 35px;
+    position: absolute;
+    overflow: hidden;
+    width: 110px;
+    cursor: pointer;
+}
+
+.dropdownContainer #dropdown:not(:checked) ~ .items {
+    height: 35px;
+}
+
+.dropdownContainer:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.dropdownContainer .items label {
+    position: relative;
+    display: none;
+    padding: 10px 40px;
+    background: white;
+    color: #7B7B7B;
+    z-index: 2;
+}
+
+.dropdownContainer .items label:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdownContainer .items label:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+
+.dropdownContainer .items label:hover {
+    background: #F7F5F5;
+    cursor: pointer;
+}
+
+.dropdownContainer #dropdown:checked ~ .items {
+    border-radius: 8px;
+    padding-top: 60px;
+}
+
+.dropdownContainer #dropdown:checked ~ .items label {
+    display: block;
+}
+
+.dropdownContainer .items input:checked + label {
+    display: block !important;
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 6px 40px;
+}
+
+.dropdownContainer #dropdown:checked ~ .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.currentCurrency {
+    text-align: center;
+}
+
+.currentCurrency_text {
+    position: relative;
+    top: 5px;
+    font: var(--font-dropdown);
+}

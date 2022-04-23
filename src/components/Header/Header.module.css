@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2dc033;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.header__container {
+  min-width: 1300px;
+
+  padding: 0 60px;
+
+  display: flex;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+}
+
+.mainTitle {
+  margin: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
