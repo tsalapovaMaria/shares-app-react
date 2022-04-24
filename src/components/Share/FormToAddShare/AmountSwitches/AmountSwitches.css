@@ -1,0 +1,51 @@
+.btns__remove-btn,
+.btns__add-btn {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+
+    border: none;
+    font-weight: 1000;
+
+    cursor: pointer;
+    background: none;
+}
+.btns__add-btn {
+    right: 0;
+}
+.btns__remove-btn:hover::after,
+.btns__add-btn:hover::before,
+.btns__add-btn:hover::after {
+    border: 1px solid #34bc48;
+    background-color: #34bc48;
+
+    transition: all 0.15s;
+}
+.btns__add-btn::after,
+.btns__add-btn::before,
+.btns__remove-btn::after {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    right: 7px;
+
+    width: 14px;
+    height: 0;
+
+    border-radius: 2px;
+
+    border: 1px solid #909090;
+    background-color: #909090;
+
+    z-index: 2;
+    transition: all 0.15s;
+}
+.btns__add-btn::before {
+    transform: rotate(90deg);
+}
+.btns__remove-btn::after {
+    left: 9px;
+    border: 1px solid #909090;
+    background-color: #909090;
+}

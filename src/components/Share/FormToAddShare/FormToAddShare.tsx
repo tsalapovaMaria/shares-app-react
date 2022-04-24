@@ -1,5 +1,6 @@
 import React from 'react';
 import './FormToAddShare.css';
+import {AmountSwitches} from "./AmountSwitches";
 
 export const FormToAddShare = () => {
     return (
@@ -9,10 +10,7 @@ export const FormToAddShare = () => {
                     <div className="shares-form-inputs__amount-container">
                         <input type="text" className="amount-container__input" placeholder="1 шт" value="1" required/>
                         <span className="amount-container__amounts">шт</span>
-                        <div className="amount-container__btns">
-                            <button type="button" className="btns__remove-btn"/>
-                            <button type="button" className="btns__add-btn"/>
-                        </div>
+                        <AmountSwitches/>
                     </div>
                     <div className="shares-form-inputs__price-container">
                         <input type="text" placeholder="0 $" className="price-container__input" required/>
