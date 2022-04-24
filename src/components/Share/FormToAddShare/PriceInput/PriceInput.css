@@ -1,0 +1,37 @@
+.price-container__input  {
+    width: 100%;
+    height: 30px;
+
+    box-sizing: border-box;
+
+    position: relative;
+    border: none;
+    background: #faf8fb;
+    border-radius: 8px;
+
+    font: var(--font-text);
+
+    color: #4f4e57;
+}
+.price-container__currency {
+    position: absolute;
+
+    z-index: 2;
+    cursor: default;
+
+    font-weight: normal;
+    color: #4f4e57;
+}
+
+.shares-form-inputs__price-container{
+    position: relative;
+    margin-left: 20px;
+}
+.price-container__input {
+    padding: 6px 10px 6px 0;
+
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 18px;
+}

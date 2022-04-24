@@ -1,3 +1,6 @@
+.shares-form-inputs__amount-container {
+    position: relative;
+}
 .amount-container__input{
     padding: 5px 100px 3px 17px;
     width: 100%;
