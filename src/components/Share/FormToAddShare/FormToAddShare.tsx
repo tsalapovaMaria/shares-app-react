@@ -2,6 +2,7 @@ import React from 'react';
 import './FormToAddShare.css';
 import {AmountInput} from "./AmountInput";
 import {PriceInput} from "./PriceInput";
+import {BtnToAdd} from "./BtnToAdd";
 
 export const FormToAddShare = () => {
     return (
@@ -11,9 +12,7 @@ export const FormToAddShare = () => {
                     <AmountInput/>
                     <PriceInput/>
                 </div>
-                <div className="shares-form__btn-container">
-                    <button className="btn-container__btn-add" type="submit">Добавить</button>
-                </div>
+                <BtnToAdd/>
             </form>
         </div>
     )
