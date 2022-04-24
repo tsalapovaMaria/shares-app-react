@@ -10,8 +10,6 @@
 .header__container {
   min-width: 1300px;
 
-  padding: 0 60px;
-
   display: flex;
   justify-content: space-between;
 
