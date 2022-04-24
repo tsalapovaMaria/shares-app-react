@@ -16,22 +16,6 @@
 .shares-form-inputs__amount-container {
     position: relative;
 }
-.amount-container__btns {
-    position: absolute;
-    right: 3px;
-    top: 3px;
-
-    width: 63px;
-    height: 24px;
-
-    border-radius: 6px;
-    background: #FFFFFF;
-}
-
-.amount-container__input{
-    padding: 5px 100px 3px 17px;
-}
-.amount-container__input,
 .price-container__input  {
     width: 100%;
     height: 30px;
@@ -47,7 +31,6 @@
 
     color: #4f4e57;
 }
-.amount-container__amounts,
 .price-container__currency {
     position: absolute;
 
@@ -56,23 +39,6 @@
 
     font-weight: normal;
     color: #4f4e57;
-}
-.amount-container__amounts {
-    top: 8px;
-    left: 30px;
-}
-
-.amount-container__amount-span {
-    position: relative;
-}
-.amount-container__input[value="1"] ~ .amount-container__amount-span::after {
-    position: absolute;
-    top: 7px;
-    left: 35px;
-    content: " шт";
-
-    font-weight: 100;
-    z-index: 2;
 }
 
 .shares-form-inputs__price-container{

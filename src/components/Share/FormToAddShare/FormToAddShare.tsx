@@ -1,17 +1,13 @@
 import React from 'react';
 import './FormToAddShare.css';
-import {AmountSwitches} from "./AmountSwitches";
+import {AmountInput} from "./AmountInput";
 
 export const FormToAddShare = () => {
     return (
         <div className="shares-container__shares-form-container">
             <form action="" className="shares-form-container__shares-form">
                 <div className="shares-form__shares-form-inputs">
-                    <div className="shares-form-inputs__amount-container">
-                        <input type="text" className="amount-container__input" placeholder="1 шт" value="1" required/>
-                        <span className="amount-container__amounts">шт</span>
-                        <AmountSwitches/>
-                    </div>
+                    <AmountInput/>
                     <div className="shares-form-inputs__price-container">
                         <input type="text" placeholder="0 $" className="price-container__input" required/>
                     </div>
