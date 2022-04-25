@@ -1,13 +1,9 @@
 import React from 'react';
 import {Share} from '../../../types/share';
+import { UsersShareData } from '../../../types/usersShareData';
 import './Table.css';
 import {TableHeader} from "./TableHeader";
 import {TableRow} from "./TableRow";
-
-interface UsersShareData {
-    amount: number;
-    price: number;
-}
 
 interface Props {
     shares: Array<UsersShareData>;
@@ -19,7 +15,7 @@ const thirdColClassName = 'shares-header__third-col';
 
 export const Table: React.FC<Props> = (props) => {
     const { shares } = props;
-    const cells = shares.map(({amount, price}): Share => ({
+    const cells = shares.map(({amount, price, totalPrice}): Share => ({
         amount: {
             value: amount,
             className: firstColClassName,
@@ -29,7 +25,7 @@ export const Table: React.FC<Props> = (props) => {
             className: secColClassName,
         },
         totalPrice: {
-            value: amount * price,
+            value: totalPrice,
             className: thirdColClassName
         }
     }))
