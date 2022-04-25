@@ -1,10 +1,12 @@
 import React from 'react';
 import {Share} from "../Share";
+import './SharesSection.css';
 
 export const SharesSection = () => {
     return (
             <div className="shares-section">
                 <Share title="Точки входа"/>
+                <Share title="Точки выхода"/>
     {/*        <article className="shares-section__shares-article">*/}
     {/*            <h2 className="shares-article__title">Точки входа</h2>*/}
 
