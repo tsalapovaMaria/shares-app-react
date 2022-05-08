@@ -1,0 +1,6 @@
+html,
+body {
+    font: var(--font-header);
+    background: #f8f8f8;
+    margin: 0;
+}

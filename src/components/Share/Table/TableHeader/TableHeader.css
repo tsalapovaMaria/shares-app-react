@@ -1,0 +1,24 @@
+.shares-table__shares-header {
+    background: linear-gradient(
+            90.5deg,
+            rgba(143, 213, 28, 0.2) 0%,
+            rgba(143, 213, 28, 0.2) 0.01%,
+            rgba(255, 194, 60, 0.16) 46.95%,
+            rgba(253, 134, 255, 0.1) 100.16%
+    );
+}
+
+.shares-header__first-col {
+    width: 130px;
+    border-radius: 8px 0 0 8px;
+}
+.shares-header__sec-col {
+    width: 140px;
+}
+.shares-header__third-col {
+    width: 150px;
+}
+.shares-header__forth-col {
+    width: 40px;
+    border-radius: 0 8px 8px 0;
+}

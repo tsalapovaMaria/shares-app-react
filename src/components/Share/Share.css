@@ -1,0 +1,10 @@
+.shares-section__shares-article {
+    width: 560px;
+}
+
+.shares-article__shares-container {
+    margin-top: 30px;
+
+    background: #ffffff;
+    border-radius: 8px;
+}

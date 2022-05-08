@@ -13,9 +13,9 @@ export const Dropdown = () => {
                 <input type="radio" name="list" value="not_changed" id="dropdown"/>
                 <label className={styles.bg} htmlFor="bg"/>
                 <div className={styles.items}>
-                    {/*{currency.map((title, index) =>*/}
-                    {/*    <Item title={title} value={`${index}_value`} checked={index === 0}/>*/}
-                    {/*)}*/}
+                    {currency.map((title, index) =>
+                        <Item title={title} value={`${index}_value`} checked={index === 0}/>
+                    )}
                     <div className={styles.currentCurrency} id="text">
                         <span className={styles.currentCurrency_text}>USD</span>
                     </div>

@@ -1,0 +1,8 @@
+.shares-container__table-container {
+    padding: 28px 48px;
+}
+.table-container__shares-table {
+    width: 850px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
