@@ -19,8 +19,8 @@ export const FormToAddShare: React.FC<Props> = (props) => {
         addShare({amount, price, totalPrice: amount * price});
     }, [addShare, amount, price]);
 
-    console.log(amount);
-    console.log(price);
+    console.log('amount', amount);
+    console.log('price', price);
 
     return (
         <div className="shares-container__shares-form-container">
